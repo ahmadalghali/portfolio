@@ -10,7 +10,15 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+html {
+  overflow: hidden;
+  height: 100%;
+}
 
+body {
+  overflow: auto;
+  height: 100%;
+}
 * {
   box-sizing: border-box;
 }
