@@ -31,9 +31,7 @@ function Job({ job }: Props) {
 
       <div className='flex space-x-5 items-center mt-5 cursor-pointer'>
         <Image src={"/" + job.companyLogo} alt={job.companyUrl} className='w-10 bg-white' width='40' height='40' />
-        <a className='text-md font-medium' target='_blank' href={job.companyUrl}>
-          {job.companyDisplayName}
-        </a>
+        <p className='text-md font-medium'>{job.companyDisplayName}</p>
       </div>
 
       <ul className='list-disc px-5 my-5 space-y-4  leading-5 tracking-tight text-base font-medium'>
