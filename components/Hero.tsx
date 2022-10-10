@@ -8,7 +8,7 @@ function Hero({}: Props) {
   const [showSecond, setShowSecond] = useState(false);
 
   const [text] = useTypewriter({
-    words: ["Hi, my name is Ahmad.", "I'm a Software Engineer.", "I love to <code />."],
+    words: ["Hi, I'm Ahmad Alghali.", "I'm a Software Engineer.", "I love to <code />."],
     delaySpeed: 2000,
     loop: 0,
     typeSpeed: 60,
@@ -24,10 +24,12 @@ function Hero({}: Props) {
         height='200'
       />
 
-      <h1 className='text-3xl md:text-4xl lg:text-5xl text-white font-bold'>
-        <code>{text}</code>
-        <Cursor />
-      </h1>
+      <div className='w-full h-20'>
+        <h1 className='text-2xl md:text-4xl lg:text-5xl text-white font-bold'>
+          <code>{text}</code>
+          <Cursor />
+        </h1>
+      </div>
 
       <div className='my-32'></div>
 
