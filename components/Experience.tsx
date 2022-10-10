@@ -3,7 +3,8 @@ import Job from "./Job";
 
 type Props = {};
 export interface TJob {
-  companyName: string;
+  companyUrl: string;
+  companyDisplayName: string;
   companyLogo: string;
   jobTitle: string;
   location: string;
@@ -15,7 +16,8 @@ export interface TJob {
 
 const jobs: TJob[] = [
   {
-    companyName: "nhsbsa.nhs.uk",
+    companyUrl: "https://www.nhsbsa.nhs.uk/",
+    companyDisplayName: "NHS Business Services Authority",
     dateFrom: "Jul 2022",
     dateTo: "Present",
     jobTitle: "Software Developer",
@@ -29,7 +31,8 @@ const jobs: TJob[] = [
     ],
   },
   {
-    companyName: "primeboard.org",
+    companyUrl: "https://www.primeboard.org/",
+    companyDisplayName: "Prime Board Limited",
     dateFrom: "Aug 2021",
     dateTo: "Jun 2022",
     jobTitle: "Junior Developer",
@@ -53,7 +56,7 @@ function Experience({}: Props) {
 
       <div className='mt-10 space-y-20 px-3'>
         {jobs.map((job) => (
-          <Job job={job} key={job.companyName} />
+          <Job job={job} key={job.companyUrl} />
         ))}
       </div>
     </div>
