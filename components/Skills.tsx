@@ -22,8 +22,8 @@ function Skills({}: Props) {
       <p className='text-3xl font-semibold text-center'>Skills</p>
       <div className='mt-10 grid grid-cols-2 text-center gap-y-8 place-items-center justify-items-center sm:grid-cols-3 md:grid-cols-4'>
         {skills.map((skill) => (
-          <div>
-            <Image src={`/${skill.img}`} alt={skill.title} className={skill.class ? `${skill.class}` : "w-20"} />
+          <div key={skill.title}>
+            <Image src={`/${skill.img}`} alt={skill.title} className={"w-20"} />
             <p className='font-bold mt-2'>{skill.title}</p>
           </div>
         ))}
