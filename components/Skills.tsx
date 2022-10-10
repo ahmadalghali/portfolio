@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 type Props = {};
 
@@ -17,12 +18,12 @@ function Skills({}: Props) {
     // { title: "Next.js", img: "nextjs-logo.png", class: "bg-white w-20 rounded-full   border-black" },
   ];
   return (
-    <div className='container px-5 mx-auto'>
-      <p className='text-4xl font-semibold'>Skills</p>
-      <div className='mt-10 grid grid-cols-2 text-center gap-y-8 place-items-center sm:grid-cols-3 md:grid-cols-4'>
+    <div className='container mx-auto'>
+      <p className='text-3xl font-semibold text-center'>Skills</p>
+      <div className='mt-10 grid grid-cols-2 text-center gap-y-8 place-items-center justify-items-center sm:grid-cols-3 md:grid-cols-4'>
         {skills.map((skill) => (
           <div>
-            <img src={`/${skill.img}`} alt={skill.title} className={skill.class ? `${skill.class}` : "w-20"} />
+            <Image src={`/${skill.img}`} alt={skill.title} className={skill.class ? `${skill.class}` : "w-20"} />
             <p className='font-bold mt-2'>{skill.title}</p>
           </div>
         ))}

@@ -14,8 +14,8 @@ function Hero({}: Props) {
   });
 
   return (
-    <div className='flex flex-col items-center space-y-10 text-center justify-center'>
-      <img src='/my-photo.jpg' alt='ahmad alghali' className='rounded-full w-52 h-52 md:w-80 md:h-80 object-cover ' />
+    <div className='mt-40 flex flex-col items-center space-y-10 text-center justify-center'>
+      <Image src='/my-photo.jpg' alt='ahmad alghali' className='rounded-full w-52 h-52 md:w-80 md:h-80 object-cover ' />
 
       <h1 className='text-3xl md:text-4xl  lg:text-5xl text-white font-bold'>
         <span>{text}</span>

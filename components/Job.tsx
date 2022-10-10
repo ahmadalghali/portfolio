@@ -1,5 +1,6 @@
 import React from "react";
 import { TJob } from "./Experience";
+import Image from "next/image";
 
 type Props = {
   job: TJob;
@@ -11,20 +12,20 @@ function Job({ job }: Props) {
     <div>
       <p className='flex justify-between'>
         <span className='font-semibold text-xl'>{job.jobTitle}</span>
-        <span className='self-end font-medium'>
+        <span className='self-end font-medium text-sm'>
           {job.dateFrom} - {job.dateTo}
         </span>
       </p>
       <div className='flex space-x-5 items-center mt-3'>
-        <img src={job.companyLogo} alt={job.companyName} className='w-10 bg-white' />
+        <Image src={job.companyLogo} alt={job.companyName} className='w-10 bg-white' />
         <p className='text-xl italic'>{job.companyName}</p>
       </div>
 
-      <ul className='list-disc px-5 my-5 space-y-4'>
+      {/* <ul className='list-disc px-5 my-5 space-y-4'>
         {job.highlights.map((point) => (
           <li>{point}</li>
         ))}
-      </ul>
+      </ul> */}
 
       <p className='mt-5 text-xl'>Technologies:</p>
       <p className='text-lg mt-1'>{technologies}</p>

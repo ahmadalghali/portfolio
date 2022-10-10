@@ -48,10 +48,10 @@ const jobs: TJob[] = [
 
 function Experience({}: Props) {
   return (
-    <div className='container px-5 mx-auto'>
-      <p className='text-4xl font-semibold'>Experience</p>
+    <div className='container mx-auto max-w-5xl md:px-10'>
+      <p className='text-3xl font-semibold text-center'>Experience</p>
 
-      <div className='mt-10 space-y-20'>
+      <div className='mt-10 space-y-20 px-3'>
         {jobs.map((job) => (
           <Job job={job} key={job.companyName} />
         ))}

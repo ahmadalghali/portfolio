@@ -2,11 +2,16 @@
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'darkBlue': '#0f172a'
+      }
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
     themes: ["night"]
+
     // themes: [{
     //    mytheme: {
     //     "primary": "#05b230",
