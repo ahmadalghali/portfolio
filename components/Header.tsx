@@ -16,7 +16,9 @@ function Header({}: Props) {
           <SocialIcon target='_blank' url='https://www.github.com/ahmadalghali' bgColor='transparent' fgColor='white' />
         </div>
 
-        <button className='rounded-md btn bg-sky-900  '>CV / Resume</button>
+        <a href='/ahmad-alghali-cv.pdf' download className='rounded-md btn bg-sky-900  '>
+          CV / Resume
+        </a>
 
         {/* <div className='flex items-center cursor-pointer hover:underline'>
           <SocialIcon network='email' bgColor='transparent' fgColor='white' />

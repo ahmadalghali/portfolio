@@ -14,7 +14,7 @@ function Job({ job }: Props) {
   const technologies = job.technologies.map((tech) => tech + "").toString();
   return (
     <div
-      className='tracking-normal rounded-2xl p-6 shadow-2xl hover:scale-105 transition-all duration-300 bg-gradient-to-r  from-[#030c37] via-[#19234c] to-[#1a2344] cursor-pointer'
+      className='tracking-normal rounded-2xl py-6 px-8 shadow-2xl  bg-gradient-to-r  from-[#030c37] via-[#19234c] to-[#1a2344] cursor-pointer'
       onClick={() => openInNewTab(job.companyUrl)}
     >
       {/* <div className='flex justify-between items-center '>
@@ -34,7 +34,7 @@ function Job({ job }: Props) {
         <p className='text-md font-medium'>{job.companyDisplayName}</p>
       </div>
 
-      <ul className='list-disc px-5 my-5 space-y-4  leading-5 tracking-tight text-base font-medium'>
+      <ul className='list-disc my-5 space-y-4 leading-5  text-sm font-medium'>
         {job.highlights.map((point) => (
           <li key={job.companyUrl}>{point}</li>
         ))}
