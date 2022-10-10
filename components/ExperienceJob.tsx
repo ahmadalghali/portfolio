@@ -10,7 +10,7 @@ const openInNewTab = (url: string) => {
   if (newWindow) newWindow.opener = null;
 };
 
-function Job({ job }: Props) {
+function ExperienceJob({ job }: Props) {
   const technologies = job.technologies.map((tech) => tech + "").toString();
   return (
     <div
@@ -40,10 +40,10 @@ function Job({ job }: Props) {
         ))}
       </ul>
 
-      <p className='mt-10 text-lg font-medium'>Technologies:</p>
-      <p className='text-md mt-1 font-medium'>{technologies}</p>
+      <p className='mt-10 font-medium'>Technologies:</p>
+      <p className='text-sm mt-1 font-medium'>{technologies}</p>
     </div>
   );
 }
 
-export default Job;
+export default ExperienceJob;

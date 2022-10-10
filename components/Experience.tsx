@@ -1,5 +1,5 @@
 import React from "react";
-import Job from "./Job";
+import ExperienceJob from "./ExperienceJob";
 
 type Props = {};
 export interface TJob {
@@ -56,7 +56,7 @@ function Experience({}: Props) {
 
       <div className='mt-10 space-y-20 px-3'>
         {jobs.map((job) => (
-          <Job job={job} key={job.companyUrl} />
+          <ExperienceJob job={job} key={job.companyUrl} />
         ))}
       </div>
     </div>
