@@ -8,9 +8,7 @@ type Props = {
 
 function Project({ project }: Props) {
   return (
-    <div
-      className={`rounded-xl py-3  px-5 shadow-2xl bg-gradient-to-r  from-[#030c37] via-[#19234c] to-[#1a2344] cursor-pointer`}
-    >
+    <div className={`flex flex-col rounded-xl py-3  px-5 shadow-2xl bg-darkBlue cursor-pointer`}>
       <div className='flex justify-between items-center'>
         <p className={`text-2xl font-bold `}>{project.title}</p>
         <SocialIcon url={project.githubRepoUrl} target='_blank' bgColor='transparent' fgColor='white' />
@@ -19,7 +17,7 @@ function Project({ project }: Props) {
         {project.githubRepoUrl}
       </a>
 
-      <div className='rounded-2xl mt-10 mb-4'>
+      <div className='rounded-2xl mt-10 mb-4 self-center'>
         <Image src={project.image} width='300' height='300' className='rounded-xl' />
       </div>
       <p>{project.description}</p>
