@@ -35,8 +35,8 @@ function ExperienceJob({ job }: Props) {
       </div>
 
       <ul className='list-disc my-5 space-y-4 leading-5  text-sm font-medium'>
-        {job.highlights.map((point) => (
-          <li key={job.companyUrl}>{point}</li>
+        {job.highlights.map((point, i) => (
+          <li key={i}>{point}</li>
         ))}
       </ul>
 
