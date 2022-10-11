@@ -4,7 +4,7 @@ type Props = {};
 
 function HeroCodePanel({}: Props) {
   return (
-    <div className='pb-10 bg-gradient-to-b from-[#272727] to-darkBlue text-left p-4 rounded-tr-xl rounded-tl-xl text-sm  mx-5'>
+    <div className='pb-10 bg-gradient-to-b from-[#272727] to-darkBlue text-left p-4 rounded-tr-xl rounded-tl-xl text-sm  mx-5 sm:text-base md:text-lg'>
       <div className='flex space-x-1'>
         <div className='rounded-full w-2 h-2  bg-red-500'></div>
         <div className='rounded-full w-2 h-2  bg-amber-500'></div>
