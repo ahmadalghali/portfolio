@@ -18,7 +18,7 @@ function Skills({}: Props) {
     // { title: "Next.js", img: "nextjs-logo.png", class: "bg-white w-20 rounded-full   border-black" },
   ];
   return (
-    <div className='container mx-auto'>
+    <div className='container mx-auto max-w-4xl'>
       <p className='text-3xl font-semibold text-center'>Skills</p>
       <div className='mt-10 grid grid-cols-2 text-center gap-y-8 place-items-center justify-items-center sm:grid-cols-3 md:grid-cols-4'>
         {skills.map((skill) => (
