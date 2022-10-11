@@ -19,7 +19,7 @@ function Hero({}: Props) {
       <Image
         src='/my-photo.jpg'
         alt='ahmad alghali'
-        className='rounded-full w-52 h-52 md:w-80 md:h-80 object-cover'
+        className='rounded-full w-52 h-52 md:w-80 md:h-80 object-cover drop-shadown-2xl'
         width='200'
         height='200'
       />

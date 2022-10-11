@@ -14,7 +14,7 @@ function ExperienceJob({ job }: Props) {
   const technologies = job.technologies.map((tech) => tech + "").toString();
   return (
     <div
-      className='tracking-normal rounded-2xl py-6 px-8 shadow-2xl bg-darkBlue cursor-pointer'
+      className='tracking-normal rounded-2xl py-6 px-8 shadow-2xl bg-slate-900 cursor-pointer'
       onClick={() => openInNewTab(job.companyUrl)}
     >
       {/* <div className='flex justify-between items-center '>
