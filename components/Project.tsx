@@ -15,7 +15,7 @@ function Project({ project }: Props) {
         <p className={`text-2xl font-bold `}>{project.title}</p>
         <SocialIcon url={project.githubRepoUrl} target='_blank' bgColor='transparent' fgColor='white' />
       </div>
-      <a href={project.githubRepoUrl} target='_blank' className='text-sm font-medium'>
+      <a href={project.githubRepoUrl} target='_blank' rel='noreferrer' className='text-sm font-medium'>
         {project.githubRepoUrl}
       </a>
 
