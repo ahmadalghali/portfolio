@@ -19,8 +19,8 @@ function Hero({}: Props) {
         <Image priority src='/my-photo.jpg' alt='ahmad alghali' className='rounded-full object-cover' layout='fill' />
       </div>
 
-      <div className='w-full h-20'>
-        <h1 className='text-2xl md:text-4xl lg:text-5xl text-white font-bold'>
+      <div className='w-11/12 h-20'>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-bold'>
           <code>{text}</code>
           <Cursor />
         </h1>
