@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'darkBlue': '#0f172a'
+        'darkBlue': '#0c0f1f'
       }
     },
   },
   plugins: [require("daisyui")],
   daisyui: {
-    // themes: ["night"]
+    themes: ["night"]
 
     // themes: [{
     //    mytheme: {

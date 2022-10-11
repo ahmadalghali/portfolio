@@ -8,7 +8,7 @@ type Props = {
 
 function Project({ project }: Props) {
   return (
-    <div className={`flex flex-col rounded-xl py-3  px-5 shadow-2xl bg-slate-900 cursor-pointer`}>
+    <div className={`flex flex-col rounded-xl py-3  px-5 shadow-2xl bg-[#11141e] text-white cursor-pointer`}>
       <div className='flex justify-between items-center'>
         <p className={`text-2xl font-bold `}>{project.title}</p>
         <SocialIcon url={project.githubRepoUrl} target='_blank' bgColor='transparent' fgColor='white' />

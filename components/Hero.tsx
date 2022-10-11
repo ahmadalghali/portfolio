@@ -1,14 +1,13 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import HeroCodePanel from "./HeroCodePanel";
+
 type Props = {};
 
 function Hero({}: Props) {
-  const [showSecond, setShowSecond] = useState(false);
-
   const [text] = useTypewriter({
-    words: ["Hi, I'm Ahmad Alghali.", "I'm a Software Engineer.", "I love to <code />."],
+    words: ["Hi, I'm Ahmad Alghali.", "I'm a Software Engineer.", "I love to <Code/>."],
     delaySpeed: 2000,
     loop: 0,
     typeSpeed: 60,
