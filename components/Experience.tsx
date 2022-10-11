@@ -54,7 +54,7 @@ function Experience({}: Props) {
     <div className='container mx-auto max-w-5xl md:px-10'>
       <p className='text-3xl font-semibold text-center'>Experience</p>
 
-      <div className='mt-10 space-y-20 px-3'>
+      <div className='mt-10 space-y-20'>
         {jobs.map((job) => (
           <ExperienceJob job={job} key={job.companyUrl} />
         ))}
