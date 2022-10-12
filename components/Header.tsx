@@ -25,14 +25,12 @@ function Header({}: Props) {
         </div>
 
         <div className='p-3 text-white bg-[#121f3d] rounded-xl sm:hidden '>
-          <DocumentIcon className='w-7 h-7' />
+          <a href='/ahmad-alghali-cv.pdf' download>
+            <DocumentIcon className='w-7 h-7' />
+          </a>
         </div>
 
-        <a
-          href='/ahmad-alghali-cv.pdf'
-          download
-          className='hidden sm:flex rounded-md btn text-white bg-[#121f3d] border-none'
-        >
+        <a download className='hidden sm:flex rounded-md btn text-white bg-[#121f3d] border-none'>
           CV / Resume
         </a>
 
