@@ -30,7 +30,11 @@ function Header({}: Props) {
           </a>
         </div>
 
-        <a download className='hidden sm:flex rounded-md btn text-white bg-[#121f3d] border-none'>
+        <a
+          href='/ahmad-alghali-cv.pdf'
+          download
+          className='hidden sm:flex rounded-md btn text-white bg-[#121f3d] border-none'
+        >
           CV / Resume
         </a>
 
