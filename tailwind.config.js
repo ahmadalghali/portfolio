@@ -4,11 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'darkBlue': '#0c0f1f'
+        'darkBlue': '#0c0f1f',
+        'githubBlack': '#11141e'
       }
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("@tailwindcss/aspect-ratio")],
   daisyui: {
     themes: ["night"]
 

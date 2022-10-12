@@ -13,25 +13,25 @@ function Header({}: Props) {
             url='https://www.linkedin.com/in/ahmad-alghali'
             bgColor='transparent'
             fgColor='white'
-            className='p-4 bg-slate-900 rounded-xl'
+            className='p-4 text-white bg-[#121f3d] rounded-xl'
           />
           <SocialIcon
             target='_blank'
             url='https://www.github.com/ahmadalghali'
             bgColor='transparent'
             fgColor='white'
-            className='p-4 bg-slate-900 rounded-xl'
+            className='p-4 text-white bg-[#121f3d] rounded-xl'
           />
         </div>
 
-        <div className='p-3 bg-slate-900 rounded-xl sm:hidden '>
+        <div className='p-3 text-white bg-[#121f3d] rounded-xl sm:hidden '>
           <DocumentIcon className='w-7 h-7' />
         </div>
 
         <a
           href='/ahmad-alghali-cv.pdf'
           download
-          className='hidden sm:flex rounded-md btn bg-neutral border-none  shadow-2xl '
+          className='hidden sm:flex rounded-md btn text-white bg-[#121f3d] border-none'
         >
           CV / Resume
         </a>
