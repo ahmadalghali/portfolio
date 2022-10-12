@@ -26,7 +26,7 @@ function Project({ project }: Props) {
       </a>
 
       <div className='rounded-2xl mt-10 mb-4 self-center aspect-w-1'>
-        <Image src={project.image} width='600' height='600' className='rounded-xl object-cover' />
+        <Image src={project.image} alt={project.title} width='600' height='600' className='rounded-xl object-cover' />
       </div>
       <p>{project.description}</p>
     </div>
