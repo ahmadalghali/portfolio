@@ -30,7 +30,8 @@ const projects: TProject[] = [
     title: "Timeshare",
     githubRepoUrl: "https://github.com/ahmadalghali/timeshare",
     image: "/timeshare.png",
-    description: "📚 🧠 A skill sharing hub, teach what you're good at, earn tokens and spend them learn other skills!",
+    description:
+      "📚 🧠 A skill sharing hub, teach what you're good at, earn tokens and spend them to learn other skills!",
   },
 ];
 
