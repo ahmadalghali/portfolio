@@ -5,17 +5,17 @@ type Props = {};
 
 export interface TProject {
   title: string;
-  theme: string;
   githubRepoUrl: string;
   image: string;
   description: string;
+  theme?: string;
 }
 const projects: TProject[] = [
   {
     title: "Cambu",
     theme: "gray-800",
     githubRepoUrl: "https://github.com/ahmadalghali/cambu",
-    description: "👟 Cambu, a fast-growing shoe brand.",
+    description: "👟 An online ecommerce store for a fast-growing footwear brand.",
     image: "/cambu.png",
   },
   {
@@ -26,6 +26,12 @@ const projects: TProject[] = [
       "🧑‍🏫 📱 The platform for tuition academies to manage tutors and students with livechat and lesson booking.",
     image: "/tutorly.png",
   },
+  {
+    title: "Timeshare",
+    githubRepoUrl: "https://github.com/ahmadalghali/timeshare",
+    image: "/timeshare.png",
+    description: "📚 🧠 A skill sharing hub, teach what you're good at, earn tokens and spend them learn other skills!",
+  },
 ];
 
 function Projects({}: Props) {
@@ -33,7 +39,7 @@ function Projects({}: Props) {
     <div className='max-w-5xl mx-auto'>
       <p className='text-3xl font-semibold text-center'>Projects</p>
 
-      <div className='mt-10 space-y-20 md:space-y-0 md:grid md:grid-cols-2 md:gap-8'>
+      <div className='mt-10 space-y-20 md:space-y-0 md:grid md:grid-cols-2 md:gap-8 lg:grid-cols-3'>
         {projects.map((project) => (
           <Project project={project} key={project.githubRepoUrl} />
         ))}
