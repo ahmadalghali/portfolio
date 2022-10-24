@@ -16,7 +16,7 @@ function Hero({}: Props) {
   return (
     <div className='mt-40 flex flex-col items-center space-y-10 text-center justify-center'>
       <div className='relative h-52 w-52  md:w-80 md:h-80  drop-shadow-2xl'>
-        <Image priority src='/my-photo.jpg' alt='ahmad alghali' className='rounded-full object-cover' layout='fill' />
+        <Image src='/my-photo.jpg' alt='ahmad alghali' className='rounded-full object-cover' layout='fill' />
       </div>
 
       <div className='w-11/12 h-20'>
