@@ -33,6 +33,12 @@ const projects: TProject[] = [
     description:
       "📚 🧠 A skill sharing hub, teach what you're good at, earn tokens and spend them to learn other skills!",
   },
+  {
+    title: "Sherpa",
+    githubRepoUrl: "https://github.com/ahmadalghali/sherpa",
+    image: "/sherpa.png",
+    description: "🏆 The one and only app to track your progress and achieve your goals!",
+  },
 ];
 
 function Projects({}: Props) {
