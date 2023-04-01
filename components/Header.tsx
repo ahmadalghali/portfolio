@@ -33,7 +33,7 @@ function Header({}: Props) {
 
         {/* <div className=''> */}
         <div className='p-3 text-white bg-[#121f3d] rounded-xl sm:hidden '>
-          <a href='/ahmad-alghali-cv.pdf' onClick={handleDownloadClick} download>
+          <a href='/ahmad-alghali-cv.pdf' download>
             <DocumentIcon className='w-7 h-7' />
           </a>
         </div>
