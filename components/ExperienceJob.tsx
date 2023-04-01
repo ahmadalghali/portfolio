@@ -25,7 +25,7 @@ function ExperienceJob({ job }: Props) {
       </div> */}
 
       <p className='font-semibold text-xl'>{job.jobTitle}</p>
-      <p className='font-medium text-sm  '>
+      <p className='font-medium text-sm mt-2'>
         {job.dateFrom} - {job.dateTo}
       </p>
 
