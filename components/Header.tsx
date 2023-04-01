@@ -1,9 +1,16 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import DocumentIcon from "./DocumentIcon";
+import { useRouter } from "next/router";
 type Props = {};
 
 function Header({}: Props) {
+  const router = useRouter();
+
+  function handleDownloadClick() {
+    router.push("/cv");
+  }
+
   return (
     <header>
       <div className='px-5 pt-8 flex justify-between max-w-7xl mx-auto items-center  z-20'>
@@ -24,6 +31,7 @@ function Header({}: Props) {
           />
         </div>
 
+        {/* <div className=''> */}
         <div className='p-3 text-white bg-[#121f3d] rounded-xl sm:hidden '>
           <a href='/ahmad-alghali-cv.pdf' download>
             <DocumentIcon className='w-7 h-7' />
@@ -32,6 +40,7 @@ function Header({}: Props) {
 
         <a
           href='/ahmad-alghali-cv.pdf'
+          onClick={handleDownloadClick}
           download
           className='hidden sm:flex rounded-md btn text-white bg-[#121f3d] border-none'
         >
@@ -39,8 +48,9 @@ function Header({}: Props) {
         </a>
 
         {/* <div className='flex items-center cursor-pointer hover:underline'>
-          <SocialIcon network='email' bgColor='transparent' fgColor='white' />
-          <p className='uppercase hidden lg:inline text-white font-bold  '>Get in touch</p>
+            <SocialIcon network='email' bgColor='transparent' fgColor='white' />
+            <p className='uppercase hidden lg:inline text-white font-bold  '>Get in touch</p>
+          </div>
         </div> */}
       </div>
     </header>
