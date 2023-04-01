@@ -15,6 +15,8 @@ function Skills({}: Props) {
     { title: "Spring Boot", img: "spring-boot.png" },
     { title: "SQL", img: "sql-no-bg.png" },
     { title: "Git", img: "git.png" },
+    { title: "C#", img: "c-sharp.png" },
+    { title: ".NET", img: "dotnet.png" },
     // { title: "Next.js", img: "nextjs-logo.png", class: "bg-white w-20 rounded-full   border-black" },
   ];
   return (
