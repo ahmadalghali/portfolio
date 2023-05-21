@@ -12,6 +12,18 @@ export interface TProject {
 }
 const projects: TProject[] = [
   {
+    title: "HousePal",
+    githubRepoUrl: "https://github.com/ahmadalghali/housepal",
+    image: "/housepal.png",
+    description: "A chore management tool to track, log, and distribute responsibilities among household members.",
+  },
+  {
+    title: "Sherpa",
+    githubRepoUrl: "https://github.com/ahmadalghali/sherpa",
+    image: "/sherpa.png",
+    description: "🏆 The one and only app to track your progress and achieve your goals!",
+  },
+  {
     title: "Cambu",
     theme: "gray-800",
     githubRepoUrl: "https://github.com/ahmadalghali/cambu",
@@ -32,12 +44,6 @@ const projects: TProject[] = [
     image: "/timeshare.png",
     description:
       "📚 🧠 A skill sharing hub, teach what you're good at, earn tokens and spend them to learn other skills!",
-  },
-  {
-    title: "Sherpa",
-    githubRepoUrl: "https://github.com/ahmadalghali/sherpa",
-    image: "/sherpa.png",
-    description: "🏆 The one and only app to track your progress and achieve your goals!",
   },
 ];
 
